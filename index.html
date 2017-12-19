@@ -18,7 +18,7 @@
 
 	<!-- Here is the code necessary to get the Navbar to Run -->
 	
-	<div style="padding-left: 87%; background-color: none;">
+	<div style="padding-left: 80%; background-color: none;">
 		<nav class="navbar navbar-dark" style="">
 	  <a class="navbar-brand" href="#"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="true" style="background-color: black;">
@@ -70,7 +70,9 @@
 <div class="gridContainer">
 
 	<div class="Welcome">
-		<img class = "roundedImg" id="myFace" src="images/snake.jpg" style="width:128px; height: 128px; ">
+		<img class = "roundedImg" id="myFace" src="images/snake.jpg" style="width:128px; height: 128px; "
+		onmouseover="onMouseHover(this)" onMouseLeave="onMouseLeave(this)"
+		>
 		<h2 id="welcomeText" style = "color: black;">Welcome!</h2>
 	</div>
 
@@ -111,7 +113,15 @@
 <div class="footer" style="padding-top: 15px">
 	<p style="color: white;">Contact Me</p>
 </div>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js">
+		function onMouseHover(img){//This does stuff when you hover a mouse 
+			img.src = "https://cdn.pixabay.com/photo/2017/02/03/13/54/unicorn-2035174_960_720.png";
+		}
+
+		function onMouseLeave(img){
+			img.src = "https://www.petfinder.com/wp-content/uploads/2012/11/91615172-find-a-lump-on-cats-skin-632x475.jpg";
+		}
+	</script>
 	<!--The three lines of code below are the JQuery, Popper.js, and Bootstrap JS necessary for the code to run, respectively-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

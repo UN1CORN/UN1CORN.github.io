@@ -23,6 +23,8 @@
 		.AboutMe{
 			grid-area: a;
 			background-repeat: 	repeat-x;	
+			background-position: center;
+			background-size: cover;
 		}
 
 		.WhatIveDone{
@@ -47,6 +49,11 @@
 		    height: 	50px;
 		    text-align: 	center;	
 			}
+		.navbar-collapse {
+			position: absolute;
+			top: 50px;
+			right: 100px;
+		}
 	/*	#footerText{
 			position: relative;
 			padding-top: 	50%;
@@ -62,8 +69,8 @@
 			color: black;
 		}
 		#welcomeText{
-			/*This is here to get the welcome banner to stay in 1 place, but it has yet to work*/
-			position: 50%,3%;
+			/*This is here to get the welcome banner to stay in 1 place, but it has yet to work
+			This is not currently in use, as we fixed the issue by modifying the Nav Bar
 /*			position: absolute;*/
 		}
 		
