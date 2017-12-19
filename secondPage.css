@@ -1,0 +1,26 @@
+	p{
+		text-decoration-color: green;
+		font-weight: bold;
+		color: red;
+	}
+	body{
+		background-image: url(https://ih0.redbubble.net/image.337170918.8681/flat,1000x1000,075,f.u2.jpg);
+	
+	}
+	/*These are attributes of the anchor element and can be used to modify links*/ 
+	a:link {
+	    text-decoration: none;
+	}
+
+	a:visited {
+	    text-decoration: none;
+	}
+
+	a:hover {
+	    text-decoration: none;
+	    text-decoration-color: 	red;
+	}
+
+	a:active {
+	    text-decoration: underline;
+	}

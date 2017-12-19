@@ -1,0 +1,120 @@
+		.roundedImg{
+			border-bottom-left-radius: 	15%;
+			border-bottom-right-radius: 15%;
+			border-top-left-radius: 15%;
+			border-top-right-radius: 15%;					
+		}
+		.gridContainer{
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: 640px 640px 640px 640px;
+			grid-gap: 5px;
+			grid-template-areas:
+			"w w w w w w w w w w w w"
+			"a a a a a a a a a a a a"
+			"d d d d d d d d d d d d"
+			"i i i i i i i i i i i i";
+		}
+
+		.Welcome{
+			grid-area: w;
+		}
+
+		.AboutMe{
+			grid-area: a;
+			background-repeat: 	repeat-x;	
+		}
+
+		.WhatIveDone{
+			grid-area: d;
+		}
+
+		.Interests{
+			grid-area: i;
+			background-position: 90px;
+			background-repeat: none;
+		}
+		.footer {
+		    position: static;
+		    left: 0;
+		    bottom: 0;
+		    width: 100%;
+		    background-color: black;
+		    color: white;
+		    text-align: center;
+		    padding: 0px;
+		    margin: 	0px;
+		    height: 	50px;
+		    text-align: 	center;	
+			}
+	/*	#footerText{
+			position: relative;
+			padding-top: 	50%;
+			padding-bottom: 	50%;
+		}*/
+		#myFace{
+		    position: absolute;
+		    top: 0; bottom:0; left: 0; right:0;
+		    margin: auto;
+		    grid-area: f;
+		}
+		#badPractice{
+			color: black;
+		}
+		#welcomeText{
+			/*This is here to get the welcome banner to stay in 1 place, but it has yet to work*/
+			position: 50%,3%;
+/*			position: absolute;*/
+		}
+		
+		@font-face{
+			font-family: Raleway;
+			src: url(https://fonts.google.com/?selection.family=Raleway);
+			src: url(sansation_light.woff);
+		}
+		body{
+			background: #FFFACD;
+
+		}
+		h2{
+			text-align: center;
+		}
+		h3{
+			text-align: center;
+			color: red;
+		}
+		h4{
+			text-align: center;
+			color: #FF0;
+		}
+		p{
+			text-align: center;
+			font-family: "sw-icon-font", Raleway, Monospace;
+			//color: #0A1612;
+			color: black;
+			font-weight: 	bold;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		IMG.projThumbnails{
+			display: 	block;
+			margin-left: 	auto;
+			margin-right: 	auto;
+		}
+		/*These are attributes of the anchor element and can be used to modify links*/ 
+		a:link {
+		    text-decoration: none;
+		}
+
+		a:visited {
+		    text-decoration: none;
+		}
+
+		a:hover {
+		    text-decoration: none;
+		    text-decoration-color: 	red;
+		}
+
+		a:active {
+		    text-decoration: underline;
+		}
